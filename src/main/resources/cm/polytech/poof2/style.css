@@ -1,0 +1,86 @@
+.root {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Style pour les cartes d'événements et participants */
+.card {
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+/* Style pour les onglets */
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #1ABC9C;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 5 15;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #1ABC9C;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Style pour les boutons */
+.button {
+    -fx-background-radius: 4;
+    -fx-transition: all 0.2s ease;
+}
+
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+/* Style pour les champs de texte */
+.text-field, .text-area, .combo-box {
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+}
+
+.text-field:focused, .text-area:focused, .combo-box:focused{
+    -fx-border-color: #1ABC9C;
+}
+
+/* Style pour les labels titres */
+.label-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Style pour les scroll panes */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Style pour les alertes */
+.dialog-pane {
+    -fx-background-color: white;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #4facfe;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
